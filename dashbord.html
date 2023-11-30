@@ -1,3 +1,14 @@
+<?php
+$connection=mysqli_connect("localhost","root","","disha");
+$query="SELECT * FROM `myinfo` ";
+$execute_query=mysqli_query($connection,$query);
+$number_record=mysqli_num_rows($execute_query);
+for($i=1;$i<=$number_record;$i++)
+{
+    $fetch_my_data=mysqli_fetch_row($execute_query);
+
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
